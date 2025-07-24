@@ -125,9 +125,11 @@ if submit:
 
 
     # df_results = pd.DataFrame(data)
+img_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 st.subheader("🧪 Gambar Hasil Input")
-st.image(image, caption="Gambar setelah diproses", use_column_width=True)
+# st.image(image, caption="Gambar setelah diproses", use_column_width=True)
+st.image(Image.fromarray(img_rgb), caption="Hasil dari OpenCV")
 
 
 
