@@ -9,7 +9,7 @@ from PIL import Image
 
 st.set_page_config(layout="centered")
 st.title("🖼️ Analisis Gambar Data Drilling")
-path = r"/mount/src/Drill-Schedule-Scanner/image.png"
+path = r"/mount/src/drill-schedule-scanner/image.png"
 image = Image.open(path).convert("RGB")
 image = np.array(image)
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
